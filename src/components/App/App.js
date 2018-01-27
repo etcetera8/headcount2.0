@@ -6,7 +6,7 @@ import kinderData from '../../data/kindergartners_in_full_day_program.js';
 import districtRepository from '../../helper.js';
 import ComparedCards from '../ComparedCards/ComparedCards.js'
 const district = new districtRepository(kinderData);
-
+console.log('hi');
 class App extends Component {
   constructor() {
     super()
