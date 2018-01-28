@@ -21,7 +21,7 @@ const ComparisonCard = ({comparedObject}) => {
 };
 
 ComparisonCard.propTypes = {
-  comparedObject: PropTypes.object.isRequired 
-};
+  comparedObject: PropTypes.object
+};  
 
 export default ComparisonCard;
