@@ -11,8 +11,8 @@ class Search extends Component {
   }
 
   handleInput = (event) => {
-    this.setState({query: event.target.value});
-    this.props.handleSubmit(this.state.query);
+    this.setState({query: event.target.value}, ()=>
+      this.props.handleSubmit(this.state.query));
   }
 
   submitHelper = (event) => {

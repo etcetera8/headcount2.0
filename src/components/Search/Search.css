@@ -7,19 +7,15 @@ form {
   margin-bottom: 50px;
 }
 
-#button {
-  height: 50px !important;
-}
-
 #search-input {
   box-sizing: border-box;
-  background-color: #393A37;
   border: none;
   padding: 3px;
   height: 25px;
   width: 150px;
   color: #AAD74F;
   font-size: 1.3em;
+  background-color: #393A37;
 }
 
 #search-input::placeholder {
@@ -35,5 +31,9 @@ form {
   margin-left: 15px;
   height: 25px !important;
   color: #AAD74F;
+}
+
+#button:active {
+  background:#FFFF74;
 }
 

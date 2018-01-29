@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import Search from '../Search/Search';
+import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer.js';
 import kinderData from '../../data/kindergartners_in_full_day_program.js';
+//import thirdGradeTests from '../../data/3rd_grade_tests.js'
 import districtRepository from '../../helper.js';
 import ComparedCards from '../ComparedCards/ComparedCards.js';
-const district = new districtRepository(kinderData);
+let district = new districtRepository(kinderData);
+
+
 
 class App extends Component {
   constructor() {
@@ -14,6 +18,12 @@ class App extends Component {
       districtData: district.data,
       selectedCards: []
     };
+  }
+
+  selectData = (dataType) => {
+    district = new districtRepository(dataType);
+    this.setState({districtData: district.data})
+    console.log('click')
   }
 
   handleSubmit = (query) => {
@@ -63,7 +73,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <h1>HEADCOUNT</h1>
+        <Header selectData={this.selectData} />
         <Search handleSubmit={this.handleSubmit}/>
         {
           this.state.selectedCards.length > 0 &&
