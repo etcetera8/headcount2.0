@@ -1,6 +1,8 @@
 # HeadCount 2.0
 
-- This is a pair project created with @nyssakeller and myself. The app takes in kindergarten attendance rates for all Colorado school districts. The user is able to live search for any district they wish to find with the results narrowing down as they type. As soon as two districts are selected a comparison card appears that shows the users the ratio of attendance rates between the two. The user can also toggle selection by clicking again on any card or clearing out the entire comparison container.
+[live page](http://headcount2.surge.sh/)
+
+This is a pair project created with @nyssakeller and myself. The app takes in kindergarten attendance rates for all Colorado school districts. The user is able to live search for any district they wish to find with the results narrowing down as they type. As soon as two districts are selected a comparison card appears that shows the users the ratio of attendance rates between the two. The user can also toggle selection by clicking again on any card or clearing out the entire comparison container.
 
 - We developed this app in one week using React and a full unit and integration testing suite using Jest and Enzyme.
 
